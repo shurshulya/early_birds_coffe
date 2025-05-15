@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Anton';
+    src: url(./font/Anton-Regular.woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BethEllen';
+    src: url(./font/BethEllen-Regular.woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SpaceMono';
+    src: url(./font/SpaceMono-Regular.woff2);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+:root {
+    --font-family-main: 'Anton', sans-serif;
+    --font-family-signature: 'BethEllen', sans-serif;
+    --font-family-typewriter: 'SpaceMono', sans-serif;
+
+    --color-black: #1D1D1B;
+    --color-white: #FFFFFF;
+    --color-light-brown: #FDF1D9;
+
+    --container-width: 1920px;
+    --header-width: 1900px;
+    --header-padding-x: 10px;
+}
+
+.container {
+    width: var(--container-width);
+    margin-inline: auto;
+    padding-inline: var(--header-padding-x);
+    background-color: aqua;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: var(--header-width);
+    background-color: #ffffff;
+}
+
+.header-preliminary-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.header-preliminary-information-text {
+    font-family: var(--font-family-typewriter);
+    font-size: 14px;
+    font-weight: 500; 
+}
+
+.header-nav-back-section {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 2fr 11fr 1fr 1fr;
+    width: 100%;
+    height: 100px;
+}
+
+.header-top-nav-left {
+    margin-left: 30px;
+}
+
+.header-top-nav-left-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 45px;
+}
+
+.header-top-nav-left-item,
+ .header-top-nav-right-item {
+    font-family: var(--font-family-typewriter);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.top-nav-left-link,
+.top-nav-right-link { 
+    display: grid;
+    justify-items: center;
+}
+
+.top-nav-left-link::after,
+.top-nav-right-link::after{
+    content: '';
+    background: url(./icon/line.svg) center / cover no-repeat;
+    width: 60px;
+    height: 5px;
+}
+
+.header-top-nav-right-list{
+    margin-right: 35px;
+}
+
+.header-top-nav-right-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.header-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100%;
+}
+
