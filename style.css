@@ -403,11 +403,12 @@ a {
 
 .section-shop{
     display:  grid;
-    grid-template-columns: 360px  calc(100vw - 3 * 120px);
+    grid-template-columns: 360px  calc(100vw - 360px);
     background: var(--color-light-gray);
-    height: 980px;
+    height: 100vh;
     border-right: 1px solid var(--color-black);
     border-bottom: 1px solid var(--color-black);
+    overflow: hidden;
 }
 
 .section-shop-locations {
@@ -416,7 +417,8 @@ a {
     grid-template-columns: repeat(3, 1fr);
     max-height: 980px;
     height: 100%;
-    border: 1px solid var(--color-black);
+    border-left: 1px solid var(--color-black);
+    border-right: 1px solid var(--color-black);
     border-top: none;
     position: relative;
 }
@@ -441,12 +443,18 @@ a {
     background: var(--color-black);
 } 
 
-
 .location-title {
     font-size: 50px;
     writing-mode: tb-rl;
     transform: rotate(180deg);
     margin-bottom: 50px;
+}
+
+.location-button-1,
+.location-button-2,
+.location-button-3 {
+    border: none;
+    background-color: transparent;
 }
 
 .section-shop-details-1 {
@@ -497,7 +505,6 @@ a {
     width: 155px;
     height: 60px;
     z-index: 10;
-    
 }
 
 .section-shop-details-img-1 {
@@ -509,4 +516,67 @@ a {
     width: 100%;
     max-height: 795px;
     height: 100%;
+}
+
+.section-cataloge {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-cataloge-title {
+    display: flex;
+    align-items: center;
+    height: 180px;
+}
+
+.section-cataloge-title-text {
+    font-size: 70px;
+    margin-inline: 50px;
+}
+
+.section-cataloge-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    height: 585px;
+    border: 1px solid var(--color-black);
+}
+
+.section-cataloge-item {
+    position: relative;
+}
+
+.section-cataloge-line-1::before,
+.section-cataloge-line-2::before,
+.section-cataloge-line-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -40px;
+    display: block;
+    background: var(--color-black);
+    width: 1px;
+    height: 100%;
+}
+
+.section-cataloge-img {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 394px;
+    height: 409px;
+}
+
+.section-cataloge-item-name {
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.section-cataloge-item-cost {
+    font-family: var(--font-family-typewriter);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
 }
