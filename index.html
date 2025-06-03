@@ -118,7 +118,7 @@
                             <p class="section-shop-contact-working-hours-1 section-shop-contact-writing">Mon-Fri..........6.45am-3.00pm<br>
                                 Sat-Sun.........8.30am-4.00pm</p>
                         </address>
-                        <button class="section-shop-details-button-1 bold-uppercase" type="button">contact us</button>
+                        <button class="section-shop-details-button-1 bold-uppercase black-button" type="button">contact us</button>
                     </div>
                 </div>
             </section>
@@ -193,6 +193,45 @@
                         <button class="section-food-item-button button-with-arrow bold-uppercase">view more</button>
                     </li>
                 </ul>
+            </section>
+            <section class="section-reservation">
+                <h2 class="reservation-title bold-uppercase">Reserve Your Table</h2>
+                <form class="reservation-form" action="">
+                    <fieldset class="reservation-input-all reservation-fieldset">
+                        <h3 class="visually-hidden">Select the number of guests</h3>
+                        <label class="reservation-fieldset-label-oneGuest typewriter" for="oneGuest">
+                            One guest
+                            <input class="reservation-fieldset-input-oneGuest" type="radio" id="oneGuest">
+                        </label>
+                        <fieldset class="reservation-more-than-one-guest typewriter visually-hidden"> 
+                            <label for="twoGuest">
+                            Two guests
+                            <input type="radio" id="twoGuest">
+                            </label>
+                            <label for="threeGuest">
+                                Three guests
+                                <input type="radio" id="threeGuest">
+                            </label>
+                            <label for="fourGuest">
+                                Four guests
+                                <input type="radio" id="fourGuest">
+                            </label>
+                            <label for="fiveGuest">
+                                Five guests
+                                <input type="radio" id="fiveGuest">
+                            </label>
+                            <label for="moreThanFiveGuest">
+                                More than five guests
+                                <input type="radio" id="moreThanFiveGuest">
+                            </label>
+                            </fieldset>
+                    </fieldset>
+                    <label class="visually-hidden" for="date">Select the date of your visit</label>
+                    <input class="reservation-input-all typewriter" type="date" id="date">
+                    <label class="visually-hidden" for="time"></label>
+                    <input class="reservation-input-all typewriter" type="time" id="time">
+                    <button class="reservation-button bold-uppercase black-button" type="submit">book a table</button>
+                </form>
             </section>
         </main>
     </div>
