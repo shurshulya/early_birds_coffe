@@ -74,6 +74,7 @@ input[type="radio"] {
     --color-light-brown: #FDF1D9;
     --color-light-gray: #F8F8F8;
     --color-blue: #B8DFF2;
+    --color-light-green: #C5D6D1;
 
     --container-width: 1920px;
     --header-width: 1900px;
@@ -857,4 +858,129 @@ input[type="radio"] {
 .team-members-works {
     padding-left: 38px;
     font-size: 18px;
+}
+
+.section-blog {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 2335px;
+    border-left: 1px solid var(--color-black);
+    background-color: var(--color-light-gray);
+}
+
+.blog-background-title {
+    max-width: 777px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.blog-title {
+    font-size: 70px;
+    padding: 50px 200px 35px 60px;
+}
+
+.blog-title-button {
+    font-size: 17px;
+    max-width: 182px;
+    width: 100%;
+    max-height: 60px;
+    height: 100%;
+    margin-left: 60px;
+}
+
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-black);
+    border-top: none;
+    width: 100%;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.blog-item:not(:last-child){
+    border-bottom: 1px solid var(--color-black);
+}
+
+.blog-item-img {
+    border-radius: 15px;
+    max-width: 440px;
+    max-height: 295px;
+    height: 100%;
+    width: 100%;
+    margin: 0 45px 0 40px;
+}
+
+.blog-item-date {
+    position: relative;
+    top: -50px;
+    font-size: 18px;
+}
+
+.blog-item-title {
+    position: relative;
+    top: -40px;
+    font-size: 35px;
+    padding-right: 240px;
+}
+
+.blog-item-button {
+    position: relative;
+    bottom: -62px;
+}
+
+.section-school {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 925px;
+    border: 1px solid var(--color-black);
+    border-top: none;
+    background-color: var(--color-light-green);
+}
+
+.section-school-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.school-img {
+    max-width: 1130px;
+    /* max-height: 650px; */
+    /* height: 100%; */
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding-left: 30px;
+}
+
+.school-block-title {
+    font-size: 2.19em;
+    margin-bottom: 10px;
+    padding-right: 1em;
+}
+
+.school-block-description {
+    font-size: 1.125em;
+    padding-right: 7em;
+    margin-bottom: 3.43em;
+}
+
+.school-block-button {
+    width: 151px;
+    height: 59px;
 }
