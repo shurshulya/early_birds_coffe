@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Anton';
-    src: url(./font/Anton-Regular.woff2);
+    src: url(font/Anton-Regular.woff2);
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'BethEllen';
-    src: url(./font/BethEllen-Regular.woff2);
+    src: url(font/BethEllen-Regular.woff2);
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'SpaceMono';
-    src: url(./font/SpaceMono-Regular.woff2);
+    src: url(font/SpaceMono-Regular.woff2);
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -210,7 +210,7 @@ body {
 
 .bottom-line-top-menu::after{
     content: '';
-    background: url(./icon/line.svg) center / cover no-repeat;
+    background: url(icon/line.svg) center / cover no-repeat;
     width: 60px;
     height: 5px;
 }
@@ -270,7 +270,7 @@ body {
     position: absolute;
     right: -10px;
     top: -100px;
-    background: url(./icon/seal-sign.svg) center / cover no-repeat;
+    background: url(icon/seal-sign.svg) center / cover no-repeat;
     width: 135px;
     aspect-ratio: 1;
     z-index: 0;
@@ -338,7 +338,7 @@ body {
     position: absolute;
     top: 10%;
     right: 0;
-    background: url(./icon/ellipse-stroke.svg) center / cover no-repeat;
+    background: url(icon/ellipse-stroke.svg) center / cover no-repeat;
     width: 100%;
     height: 75%;
 }
@@ -370,7 +370,7 @@ body {
 .button-with-arrow::after {
     content: '';
     margin-left: 10px;
-    background: url(./icon/drawn-arrow.svg) center / cover no-repeat;
+    background: url(icon/drawn-arrow.svg) center / cover no-repeat;
     width: 30px;
     aspect-ratio: 1;
 }
@@ -430,7 +430,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./img/branding-message.jpg) center / cover no-repeat;
+    background: url(img/branding-message.jpg) center / cover no-repeat;
     height: 750px;
 }
 
@@ -461,7 +461,7 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    background: url(./icon/stars-quote.svg) center / cover ;
+    background: url(icon/stars-quote.svg) center / cover ;
     width: 130px;
     height: 20px;
     margin-bottom: 30px;
@@ -581,7 +581,7 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    background: url(./icon/section-shop-button-decoration.svg) center / cover ;
+    background: url(icon/section-shop-button-decoration.svg) center / cover ;
     width: 155px;
     height: 60px;
     z-index: 10;
@@ -677,7 +677,7 @@ body {
     position: absolute;
     left: 50px;
     bottom: 50px;
-    background: url(./img/section-food-decoration.png) center / cover no-repeat;
+    background: url(img/section-food-decoration.png) center / cover no-repeat;
     max-width: 315px;
     max-height: 237px;
     width: 100%;
@@ -739,7 +739,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background: url(./img/header-img-2.svg) center / cover no-repeat;
+    background: url(img/header-img-2.svg) center / cover no-repeat;
     border: 1px solid var(--color-black);
 
 }
@@ -783,7 +783,7 @@ body {
     display: block;
     width: 18px;
     height: 12px;
-    background: url(./icon/input-arrow.svg) center / cover no-repeat;
+    background: url(icon/input-arrow.svg) center / cover no-repeat;
 }
 
 .reservation-fieldset-label-oneGuest {
@@ -1122,7 +1122,7 @@ body {
     content: '';
     position: absolute;
     display: block;
-    background: url(./icon/coffee-expenses-icon.svg) center / cover no-repeat;
+    background: url(icon/coffee-expenses-icon.svg) center / cover no-repeat;
     max-width: 400px;
     width: 100%;
     max-height: 170px;
@@ -1243,7 +1243,7 @@ body {
 
 .bottom-line-footer::after{
     content: '';
-    background: url(./icon/line.svg) center / cover no-repeat;
+    background: url(icon/line.svg) center / cover no-repeat;
     transform: translateX(-50%);
     width: 60px;
     height: 5px;
