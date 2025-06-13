@@ -1176,6 +1176,12 @@ body {
 
 .instagram-imgs-collection-item {
     border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: 0.6s 0.1s;
+}
+
+.instagram-imgs-collection-item:hover {
+    transform: rotateY(180deg);
 }
 
 .links {
